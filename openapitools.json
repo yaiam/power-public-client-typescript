@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.0.0",
+    "generators": {
+      "csharp": {
+        "inputSpec": "swagger.json",
+        "output": "./src",
+        "generatorName": "typescript-fetch",
+        "globalProperty": "apiTests=false,apiDocs=false,modelTests=false,modelDocs=false",
+        "additionalProperties": {
+          "disallowAdditionalPropertiesIfNotPresent": true,
+          "legacyDiscriminatorBehavior": false,
+          "npmName": "@yaiam/power-public-client",
+          "npmVersion": "1.0.0-alpha01",
+          "supportsES6": false
+        }
+      }
+    }
+  }
+}
